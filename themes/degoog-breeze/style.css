@@ -1,0 +1,188 @@
+/*
+Copyright (C) 2026 Butterroach
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU Affero General Public License as
+published by the Free Software Foundation, either version 3 of the
+License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU Affero General Public License for more details.
+
+You should have received a copy of the GNU Affero General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>.
+*/
+
+[data-theme="dark"]
+{
+    --primary: #3daee9 !important;
+    --primary-hover: #44bfff !important;
+    --primary-rgb: 61, 174, 233 !important;
+    --danger: #da4453 !important;
+    --warning: #f67400 !important;
+    --success: #27ae60 !important;
+    --bg: #202326 !important;
+    --bg-light: #141618 !important;
+    --bg-light-hover: var(--bg-light) !important;
+    --border: #535659 !important;
+    --border-light: var(--primary) !important;
+    --text-primary: #fcfcfc !important;
+    --text-secondary: #a1a9b1 !important;
+    --text-link: #1d99f3 !important;
+    --text-link-visited: #9b59b6 !important;
+    --text-cite: var(--text-secondary) !important;
+    --text-snippet: var(--text-secondary) !important;
+    --search-bar-bg: var(--bg-light) !important;
+    --search-bar-bg-hover: var(--search-bar-bg) !important;
+    --btn-bg: #292c30 !important;
+    --btn-text: var(--text-primary) !important;
+}
+
+[data-theme="light"]
+{
+    --primary: #3daee9 !important;
+    --primary-hover: #44bfff !important;
+    --primary-rgb: 61, 174, 233 !important;
+    --danger: #da4453 !important;
+    --warning: #f67400 !important;
+    --success: #27ae60 !important;
+    --bg: #eff0f1 !important;
+    --bg-light: #ffffff !important;
+    --bg-light-hover: var(--bg-light) !important;
+    --border: #d1d1d2 !important;
+    --border-light: var(--primary) !important;
+    --text-primary: #232629 !important;
+    --text-secondary: #707d8a !important;
+    --text-link: #2980b9 !important;
+    --text-link-visited: #9b59b6 !important;
+    --text-cite: var(--text-secondary) !important;
+    --text-snippet: var(--text-secondary) !important;
+    --search-bar-bg: var(--bg-light) !important;
+    --search-bar-bg-hover: var(--search-bar-bg) !important;
+    --btn-bg: #fcfcfc !important;
+    --btn-text: var(--text-primary) !important;
+}
+
+:root
+{
+    --overlay-bg: #1d1f22 !important;
+    --brand-blue: var(--primary) !important;
+    --brand-yellow: var(--warning) !important;
+}
+
+.degoog-panel, .degoog-dropdown, .degoog-search-bar, .degoog-accordion-body,
+.degoog-menu-item, .degoog-badge, .degoog-select-wrap,
+input:checked + .degoog-checkbox, .degoog-btn, .search-btn, .ac-dropdown {
+    border-radius: 6px !important;
+    border-color: var(--border) !important;
+    border-width: 1px !important;
+    border-style: solid !important;
+}
+
+fieldset {
+    border-radius: 0 !important;
+}
+
+.degoog-btn--secondary {
+    color: var(--text-primary) !important;
+}
+
+.degoog-btn, .search-btn {
+    transition: border-color 0.2s, background-color 0.2s !important;
+    margin: 0 2px !important;
+}
+
+.degoog-btn:hover, .search-btn:hover, .degoog-btn:active, .search-btn:active {
+    border-color: var(--primary) !important;
+}
+
+[data-theme="dark"] .degoog-btn:active, [data-theme="dark"] .search-btn:active {
+    background-color: #2d5064 !important;
+}
+
+[data-theme="light"] .degoog-btn:active,
+[data-theme="light"] .search-btn:active {
+    background-color: #c3e5f6 !important;
+}
+
+.degoog-select-wrap > select {
+    border-radius: 0 !important;
+}
+
+.settings-nav-item {
+    border-radius: 6px !important;
+    outline-color: var(--bg) !important;
+    transition: outline-color 0.2s, background-color 0.2s !important;
+}
+
+.settings-nav-item.active {
+    background-color: var(--primary) !important;
+}
+
+[data-theme="dark"] .settings-nav-item:hover {
+    background-color: #204357;
+}
+
+[data-theme="light"] .settings-nav-item:hover {
+    background-color: #c4e6f8;
+}
+
+.settings-nav-item:not(.active):hover {
+    outline-color: var(--primary) !important;
+    outline-width: 1px !important;
+    outline-style: solid !important;
+}
+
+.settings-nav-item.active:hover {
+    background-color: var(--primary-hover) !important;
+}
+
+[data-theme="light"] .settings-nav-item.active {
+    color: #fcfcfc !important;
+}
+
+.degoog-search-bar {
+    background-color: var(--bg-light) !important;
+}
+
+.degoog-btn--primary, .degoog-btn--secondary, .search-btn {
+    background-color: var(--bg) !important;
+}
+
+.degoog-search-bar:focus-within {
+    border-color: var(--primary) !important;
+}
+
+.ac-dropdown {
+    border-top-width: 0 !important;
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+    border-color: var(--primary) !important;
+    translate: 0 -5px !important;
+}
+
+.settings-sidebar {
+    padding: 5px !important;
+}
+
+select {
+    text-transform: none !important;
+}
+
+.lucky-slot {
+    display: none !important;
+}
+
+.lucky-default {
+    opacity: 1 !important;
+}
+
+.logo *, .results-logo * {
+    color: var(--primary) !important;
+}
+
+.fa-spin {
+    animation: none !important;
+}
