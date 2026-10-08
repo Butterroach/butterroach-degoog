@@ -73,7 +73,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 }
 
 .degoog-panel, .degoog-dropdown, .degoog-search-bar, .degoog-accordion-body,
-.degoog-menu-item, .degoog-badge, .degoog-select-wrap,
+.degoog-menu-item, .degoog-select-wrap,
 input:checked + .degoog-checkbox, .degoog-btn, .search-btn, .ac-dropdown {
     border-radius: 6px !important;
     border-color: var(--border) !important;
